@@ -13,13 +13,13 @@ public class MediaLib
   public MediaLib()
   {
     owner = "Unknown";
-    lastModified = Date.getCurrentDateTime();
+    lastModified = "";
   }
 
   public MediaLib(String o)
   {
     owner = o;
-    lastModified = Date.getCurrentDateTime();
+    lastModified = "";
   }
 
   public void setOwner(String o)
@@ -42,7 +42,7 @@ public class MediaLib
     if (book == null) {
       book = b;
       numBooks++;
-      lastModified = Date.getCurrentDateTime();
+      lastModified = "";
     } else {
       System.out.println("Cannot add another book. Library already contains a book. Use changeBook() to replace it.");
     }
@@ -53,7 +53,7 @@ public class MediaLib
     if (movie == null) {
       movie = m;
       numMovies++;
-      lastModified = Date.getCurrentDateTime();
+      lastModified = "";
     } else {
       System.out.println("Cannot add another movie. Library already contains a movie. Use changeMovie() to replace it.");
     }
@@ -64,7 +64,7 @@ public class MediaLib
     if (song == null) {
       song = s;
       numSongs++;
-      lastModified = Date.getCurrentDateTime();
+      lastModified = "";
     } else {
       System.out.println("Cannot add another song. Library already contains a song. Use changeSong() to replace it.");
     }
