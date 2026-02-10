@@ -32,9 +32,9 @@ public class Song {
   }
 
   public boolean equals(Object o) {
-    if (this == o) return true;
     if (!(o instanceof Song)) return false;
     Song other = (Song) o;
-    return java.util.Objects.equals(title, other.title);
+    return title.equals(other.title);
   }
 }
+
