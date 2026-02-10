@@ -45,9 +45,9 @@ public class Book
   }
 
   public boolean equals(Object o) {
-    if (this == o) return true;
     if (!(o instanceof Book)) return false;
     Book other = (Book) o;
-    return java.util.Objects.equals(title, other.title) && java.util.Objects.equals(author, other.author);
+    return title.equals(other.title) && author.equals(other.author);
   }
 }
+
