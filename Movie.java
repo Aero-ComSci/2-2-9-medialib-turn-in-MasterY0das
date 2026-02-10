@@ -38,10 +38,9 @@ public class Movie {
   }
 
   public boolean equals(Object o) {
-    if (this == o) return true;
     if (!(o instanceof Movie)) return false;
     Movie other = (Movie) o;
-    return java.util.Objects.equals(title, other.title)
-        && Double.compare(duration, other.duration) == 0;
+    return title.equals(other.title) && duration == other.duration;
   }
 }
+
